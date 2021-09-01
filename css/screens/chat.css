@@ -34,4 +34,120 @@
     padding: 15px;
     font-size: 14px;
     border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.massage-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.massage-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.massage__author {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.massage__info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.massage-row--own {
+    justify-content: flex-end;
+}
+
+.massage-row--own .massage__bubble {
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.massage-row--own .massage__info {
+    flex-direction: row-reverse;
+}
+
+.massage__bubble {
+    background-color: white;
+    padding: 8px 13px;
+    font-size: 18px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+}
+
+.massage__time,
+.massage__author {
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.reply {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.reply i {
+    opacity: 0.5;
+}
+
+.reply .reply__column:first-child {
+    width: 10%;
+}
+
+.reply .reply__column:last-child {
+    width: 90%;
+    position: relative;
+}
+
+.reply input {
+    padding: 12px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+}
+
+.reply .reply__column:last-child > i,
+.reply .reply__column:last-child button {
+    position: absolute;
+    right: -3px;
+    top: 2px;
+}
+
+.reply .reply__column:last-child > i {
+    right: 40px;
+    top: 10px;
+}
+
+.reply__column button {
+    background-color: var(--yellow);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.reply__column button i {
+    opacity: 1;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+    outline: none;
 }
